@@ -1,0 +1,9 @@
+﻿<Application x:Class="EnglischAbfrage.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EnglischAbfrage"
+             StartupUri="Windows/KapitelWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
