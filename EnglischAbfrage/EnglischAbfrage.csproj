@@ -57,22 +57,6 @@
     </ApplicationDefinition>
     <Compile Include="Klassen\Aufgaben\Aufgabe_OPP.cs" />
     <Compile Include="Klassen\Aufgaben\Aufgabe_SYN.cs" />
-    <Compile Include="Windows\KapitelWindow.xaml.cs">
-      <DependentUpon>KapitelWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\OPPWindow.xaml.cs">
-      <DependentUpon>OPPWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\SYNWindow.xaml.cs">
-      <DependentUpon>SYNWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\TypeWindow.xaml.cs">
-      <DependentUpon>TypeWindow.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Windows\KapitelWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,21 +70,8 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\OPPWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\SYNWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\TypeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Klassen\Persistenz\PersistenzCsv.cs" />
     <Compile Include="Klassen\Persistenz\PersistenzDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

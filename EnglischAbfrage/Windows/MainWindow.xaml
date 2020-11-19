@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnglischAbfrage"
         mc:Ignorable="d"
-        Title="Abfrage" Height="450" Width="800" ResizeMode="NoResize" Closed="Window_Closed" WindowStartupLocation="CenterScreen" Closing="Window_Closing" Loaded="Window_Loaded">
+        Title="Abfrage" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -24,8 +24,9 @@
 
         <TextBlock x:Name="frageBox" Grid.Row="2" Grid.Column="0" FontSize="20" Margin="0.5" TextAlignment="Center" Padding="5 50 5 5"><Run Text="[Wor"/><Run Text="t]"/></TextBlock>
         <ListView x:Name="antwortBox" Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalAlignment="Stretch" >
-            
-            <!--ListBox--><!--Listview-->
+
+            <!--ListBox-->
+            <!--Listview-->
         </ListView>
         <Button Content="Skip" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" FontSize="30" Click="skipBtn_Click" x:Name="skipBtn" />
         <!-- Ich weiß es nicht Button -->
