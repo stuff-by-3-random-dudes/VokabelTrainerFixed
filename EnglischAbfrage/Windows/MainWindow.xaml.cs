@@ -50,7 +50,10 @@ namespace EnglischAbfrage
 
                 do
                 {
+                    // index für eine zufällige Frage auswählen
                     index = random.Next(0, aufgaben.Count);
+
+                    // solange es mehr als eine Frage gibt und es soll nicht dieselbe Frage nacheinander gefragt werden
                 } while (index == aufgaben.IndexOf(aufgabe) && aufgaben.Count > 1);
                 aufgabe = aufgaben[index];
                 SetupEmptyInputFields(aufgabe.GetAnzahlAntworten());
@@ -91,12 +94,10 @@ namespace EnglischAbfrage
                 if (aufgabe.Richtig)
                 {
                     ((TextBox)sender).IsReadOnly = true;
-                    ((TextBox)sender).Background = Brushes.LightGreen;//yellowgreen
+                    ((TextBox)sender).Background = Brushes.LightGreen;
 
                     if (aufgabe.AllesGefragt() || notchecked)
                     {
-                        //aufgaben.Remove(aufgabe);
-                        // ausstehendId.Remove(aufgabe.CurrentID);
                         aufgaben.Remove(aufgabe);
                         UpdateProgressbar();
                         NeueFrageDB();
